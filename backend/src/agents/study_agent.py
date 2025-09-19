@@ -8,7 +8,7 @@ class StudyAgent:
         self.llm = ChatOpenAI(model="gpt-4")
         
         self.concept_prompt = ChatPromptTemplate.from_messages([
-            ("system", "Extract 5-7 key concepts from the given text in bullet points."),
+            ("system", "Extract 7-10 key concepts from the given text in bullet points."),
             ("user", "{text}")
         ])
         
